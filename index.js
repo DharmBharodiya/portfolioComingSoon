@@ -6,7 +6,7 @@ let tl = gsap.timeline()
 tl
 .to("#fs", {
     scaleY: 0,
-    duration: 1,
+    duration: .8,
     delay: 1,
     ease: Expo.easeInOut,
     transformOrigin: "top"
@@ -18,7 +18,7 @@ tl
     ease: Expo.easeInOut    
 })
 .to("#span2", {
-    opacity: 1,
+    opacity: .6,
     delay: -.9
 })
 .to("#ts", {
