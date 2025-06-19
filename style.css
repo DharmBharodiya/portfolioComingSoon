@@ -9,10 +9,10 @@
     font-style: normal;
 }
 
-html {
+/* html {
     overflow: hidden;
 }
-
+ */
 body{
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+/*     overflow: hidden; */
     color: white;
     font-family: sans-serif;
     font-weight: 100;
