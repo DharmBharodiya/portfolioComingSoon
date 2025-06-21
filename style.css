@@ -186,24 +186,24 @@ body{
 #gradient-container:hover{
     transition: transform 0.5s ease-in-out;
     transform: scale(1.056);
-    animation: rotate-glow 3s linear infinite;
+    animation: rotate-glow 4s linear infinite;
 }
 
 @keyframes rotate-glow {
     0% {
-        box-shadow: 0 0 100px 0px #ffb366eb;
+        box-shadow: 0 0 90px 0px #ffb366be;
     }
     25% {
-        box-shadow: 0 0 100px 0px #004080eb;
+        box-shadow: 0 0 90px 0px #004080be;
     }
     50% {
-        box-shadow: 0 0 100px 0px #66A3FFeb;
+        box-shadow: 0 0 90px 0px #66A3FFbe;
     }
     75% {
-        box-shadow: 0 0 100px 0px #FF6600eb;
+        box-shadow: 0 0 90px 0px #FF6600be;
     }
     100% {
-        box-shadow: 0 0 100px 0px #FFB366eb;
+        box-shadow: 0 0 90px 0px #FFB366be;
     }
 }
 
