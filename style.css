@@ -82,7 +82,9 @@ body{
     overflow: hidden;
 }
 #gradient-container {
-    background: #001220;
+    /* background: #001220; */
+    background: transparent;
+    z-index: 1000;
     width: 600px;
     height: 300px;
     border-radius: 300px;
@@ -179,6 +181,75 @@ body{
     background-size: 200% 200%;
     background-position: 100% 100%;
     cursor: pointer;
+}
+
+#gradient-container:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.056);
+    animation: rotate-glow 3s linear infinite;
+}
+
+@keyframes rotate-glow {
+    0% {
+        box-shadow: 0 0 100px 0px #ffb366eb;
+    }
+    25% {
+        box-shadow: 0 0 100px 0px #004080eb;
+    }
+    50% {
+        box-shadow: 0 0 100px 0px #66A3FFeb;
+    }
+    75% {
+        box-shadow: 0 0 100px 0px #FF6600eb;
+    }
+    100% {
+        box-shadow: 0 0 100px 0px #FFB366eb;
+    }
+}
+
+
+/* 
+#backgroundBalls{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: aqua;
+    z-index: 1;
+}
+
+#redball{
+    width: 300px;
+    height: 300px;
+    background-color: #c55a03;
+    border-radius: 100%;
+    filter: blur(50px);
+}
+#blueball{
+    width: 300px;
+    height: 300px;
+    background-color: #0066CC;
+    border-radius: 100%;
+    filter: blur(50px);
+} */
+
+@keyframes rotate-glow {
+    0% {
+        box-shadow: 0 0 75px 0px #FFB3666e;
+    }
+    25% {
+        box-shadow: 0 0 75px 0px #0040806e;
+    }
+    50% {
+        box-shadow: 0 0 75px 0px #66A3FF6e;
+    }
+    75% {
+        box-shadow: 0 0 75px 0px #FF66006e;
+    }
+    100% {
+        box-shadow: 0 0 75px 0px #FFB3666e;
+    }
 }
 
 @media (max-width: 600px) {
